@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login
+  namespace: development
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: login
+      tier: front-end
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 0%
+  template:
+    metadata:
+      labels:
+        name: login
+        tier: front-end
+    spec:
+      containers:
+        - name: login
+          image: busybox:1-musl
+          
+    

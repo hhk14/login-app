@@ -1,0 +1,11 @@
+---
+namespace: development
+replicas:
+  - name: login
+    count: 2
+images:
+  - name: busybox
+    newName: hhk14/busybox
+    newTag: 0.1.0
+resources:
+  - ../../base-app
