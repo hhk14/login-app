@@ -4,7 +4,7 @@ metadata:
   name: login-dev-argo-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: hhk14/busybox:*
+    argocd-image-updater.argoproj.io/image-list: hhk14/http:*
   labels:
     name: login-dev-argo-app
   finalizers:

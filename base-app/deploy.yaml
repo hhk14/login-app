@@ -23,5 +23,6 @@ spec:
       containers:
         - name: login
           image: busybox:1-musl
+          imagePullPolicy: Always
           
     

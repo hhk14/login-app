@@ -5,7 +5,7 @@ replicas:
     count: 3
 images:
   - name: busybox
-    newName: hhk14/busybox
+    newName: hhk14/http
     newTag: 0.1.0
 resources:
   - ../../base-app
